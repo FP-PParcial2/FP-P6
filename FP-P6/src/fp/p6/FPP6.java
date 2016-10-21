@@ -23,21 +23,21 @@ public class FPP6 {
         b=IntroducePagaXHora();
         sueldoSemanal(a,b);
     }
-    public static int IntroduceHoras(){
+    public static int IntroduceHoras(){//INTRODUCIR HORAS TRABAJADAS
         int horas;
         Scanner teclado=new Scanner(System.in);
         System.out.println("Introduce Horas trabajadas");
         horas=teclado.nextInt();
         return horas;
     }
-    public static double IntroducePagaXHora(){
+    public static double IntroducePagaXHora(){//INTRODUCIR PAGA POR HORA
         int paga;
         Scanner teclado=new Scanner(System.in);
         System.out.println("Introduce paga por hora");
         paga=teclado.nextInt();
         return paga;
     }
-    public static void sueldoSemanal(int a , double b){
+    public static void sueldoSemanal(int a , double b){//MOSTRAR EL SUELDO SEMANAL MEDIANTE LAS FORMULAS Y CONDICIONES ESTABLECIDAS
         if(a<=40){
             double r=(a*b)*7;
             System.out.println("El sueldo es " + r);
